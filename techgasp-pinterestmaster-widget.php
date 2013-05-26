@@ -58,7 +58,7 @@ class techgasp_pinterestmaster_widget extends WP_Widget {
 	<input id="<?php echo $this->get_field_id( 'pinterestusername' ); ?>" name="<?php echo $this->get_field_name( 'pinterestusername' ); ?>" value="<?php echo $instance['pinterestusername']; ?>" style="width:auto;" />
 	</p>
 	<hr>
-	<p><b>Pinterest Master Advanced Version:</b> constains the extra Pin-it Button, Pinterest Profile Display and Pinterest Board Display. Also includes shortcode framework.</p>
+	<p><b>Pinterest Master Advanced Version:</b> contains the extra Pin-it Button, Pinterest Profile Display and Pinterest Board Display. Also includes shortcode framework.</p>
 	<p><a class="button-primary" href="http://wordpress.techgasp.com/pinterest-master/" target="_blank" title="Pinterest Master Advanced Version">Pinterest Master Advanced Version</a></p>
 	<?php
 	}
