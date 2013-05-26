@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 2.0
+Version: 2.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -30,7 +30,7 @@ if(!class_exists('techgasp_pinterestmaster')) :
 define('TECHGASP_PINTERESTMASTER_ID', 'pinterest-master-options');
 
 // DEFINE PLUGIN NICK
-define('TECHGASP_PINTERESTMASTER_NICK', 'PINTEREST Master');
+define('TECHGASP_PINTERESTMASTER_NICK', 'Pinterest Master');
 
 require_once('techgasp-pinterestmaster-widget.php');
 
