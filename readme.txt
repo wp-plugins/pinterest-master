@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -21,6 +21,7 @@ We made sure the pinterest buttons, profile or board display integrate perfectly
 
 **LITE Version Contains:**
 
+* Display or hide Widget Title
 * Pinterest Follow Me Button
 
 **ADVANCED Version Contains:**
@@ -31,6 +32,8 @@ We made sure the pinterest buttons, profile or board display integrate perfectly
 * Pinterest Pin It Button
 * Display / Show Pinterest Board
 * Display / Show Pinterest Profile
+* Display or hide Widget Title
+* Shortcode framework. Insert the widget inside pages and posts.
 
 == Installation ==
 
