@@ -59,9 +59,9 @@ We made sure the pinterest buttons, profile or board display integrate perfectly
 * [Advaced Version Link](http://wordpress.techgasp.com/pinterest-master/)
 
 = Need More Help =
-* [ABOUT DOCUMENTATION](http://worpress.techgasp.com)
-* [ABOUT INSTALLATION](http://worpress.techgasp.com)
-* [SUPPORT](http://worpress.techgasp.com/support)
+* [ABOUT DOCUMENTATION](http://wordpress.techgasp.com)
+* [ABOUT INSTALLATION](http://wordpress.techgasp.com)
+* [SUPPORT](http://wordpress.techgasp.com/support)
 
 
 == Screenshots ==
