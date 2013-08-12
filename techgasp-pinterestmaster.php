@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 2.2
+Version: 2.3
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -30,9 +30,13 @@ if(!class_exists('techgasp_pinterestmaster')) :
 define('TECHGASP_PINTERESTMASTER_ID', 'pinterest-master-options');
 
 // DEFINE PLUGIN NICK
-define('TECHGASP_PINTERESTMASTER_NICK', 'Pinterest Master');
+define('TECHGASP_PINTERESTMASTER_NICK', 'PInterest Master');
 
+// HOOK WIDGET
 require_once('techgasp-pinterestmaster-widget.php');
+
+// HOOK INVITE
+require_once('techgasp-pinterestmaster-invite.php');
 
     class techgasp_pinterestmaster
     {
@@ -97,7 +101,7 @@ require_once('techgasp-pinterestmaster-widget.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
