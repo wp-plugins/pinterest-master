@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 2.3
+Version: 2.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -106,7 +106,7 @@ require_once('techgasp-pinterestmaster-invite.php');
 		}
 		
 		// Add settings link on plugin page
-		public function techgasp_pinterestmaster_link($links, $file) {
+		public static function techgasp_pinterestmaster_link($links, $file) {
 		static $this_plugin;
 		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
 		if ($file == $this_plugin){
