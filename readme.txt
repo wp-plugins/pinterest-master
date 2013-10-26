@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
-Tested up to: 3.6.1
+Tested up to: 3.7
 Stable tag: 4.0
 License: GPLv2 or later
 
@@ -17,7 +17,7 @@ Pinterest is a great booming social network that lets you organize and share all
 
 We made sure the p interest buttons, profile or board display integrate perfectly in any template widget. Bring new visits and users to your wordpress powered website by pin it's pages or by showing off your photos. Also check Social Master for all social networks share buttons.
 
-**pin it for wordpress**
+**pin it for wordpress...**
 
 IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of errors and conflicts
 
