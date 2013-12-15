@@ -61,6 +61,7 @@ class pinterest_master_widget extends WP_Widget {
 	$defaults = array( 'name' => __('Pinterest Master', 'pinterest_master'), 'title' => true, 'show_pinterestfollow' => false, 'pinterestusername' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
+		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
@@ -104,9 +105,17 @@ class pinterest_master_widget extends WP_Widget {
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
+	<b>Shortcode Framework</b>
+	</p>
+	<div class="description">The shortcode framework allows you to insert Pinterest Master inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
 	<b>Pinterest Master Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/pinterest-master/" target="_blank" title="Pinterest Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/pinterest-master-documentation/" target="_blank" title="Pinterest Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/pinterest-master/" target="_blank" title="Pinterest Master">Advanced Version</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/pinterest-master/" target="_blank" title="Pinterest Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/pinterest-master-documentation/" target="_blank" title="Pinterest Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/pinterest-master/" target="_blank" title="Pinterest Master">Adv. Version</a></p>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 		<p>
 		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
@@ -114,6 +123,7 @@ class pinterest_master_widget extends WP_Widget {
 		<b>Advanced Version Updater:</b>
 		</p>
 		<div class="description">The advanced version updater allows to automatically update your advanced plugin. Only available in advanced version.</div>
+		<br>
 	<?php
 	}
  }
