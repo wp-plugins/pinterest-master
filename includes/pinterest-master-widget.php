@@ -24,21 +24,21 @@ class pinterest_master_widget extends WP_Widget {
 		echo $before_widget;
 		
 		// Display the widget title
-	if ( $title )
+	if ( $title ){
 		echo $before_title . $name . $after_title;
+		}
+		else{
+		}
 		//Display Pinterest Profile
-	if ( $show_pinterestprofile )
-		echo '<a data-pin-do="embedUser" href="http://pinterest.com/'.$pinterestusername.'/"></a></br></br>';
 		//Display Pinterest Board
-	if ( $show_pinterestboard )
-		echo '<a data-pin-do="embedBoard" href="http://pinterest.com/'.$pinterestusername.'/'.$pinterestboard.'/"></a></br></br>';
 		//Display Pinterest Follow Me Button
-	if ( $show_pinterestfollow )
-			echo '<span style="float: left"><a data-pin-do="buttonFollow" href="http://pinterest.com/'.$pinterestusername.'/">Pinterest</a>&nbsp;&nbsp;</span>';
+	if ( $show_pinterestfollow ){
+		echo '<span style="float: left"><a data-pin-do="buttonFollow" href="http://pinterest.com/'.$pinterestusername.'/">Pinterest</a>&nbsp;&nbsp;</span>';
+		}
+		else{
+		}
 		//Display Pin It Button
-	if ( $show_pinterestpin )
-			echo '<span style="float: left"><a data-pin-config="beside" href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a></span>';
-	
+
 	echo '<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>' .
 		$after_widget;
 	}
@@ -86,21 +86,48 @@ class pinterest_master_widget extends WP_Widget {
 	&nbsp;
 	<b>Pinterest Pin It Button</b>
 	</p>
-	<div class="description">Only available in advanced version.</div><br>
+	<div class="description">Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Pinterest Pin It Hover Button</b>
+	</p>
+	<div class="description">Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Pinterest Pin It Button Colors</b>
+	</p>
+	<div class="description">Only available in advanced version.</div>
+	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b>Display Pinterest Profile</b>
 	</p>
-	<div class="description">Only available in advanced version.</div><br>
+	<div class="description">Only available in advanced version.</div>
+	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b>Display Pinterest Board</b>
 	</p>
-	<div class="description">Only available in advanced version.</div><br>
+	<div class="description">Only available in advanced version.</div>
+	<br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Display Pinterest Top Pin</b>
+	</p>
+	<div class="description">Only available in advanced version.</div>
+	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />

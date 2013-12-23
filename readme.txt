@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 4.1
+Stable tag: 4.2
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -28,12 +28,15 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 **ADVANCED Version Contains:**
 
-* Pinterest Follow Me Button
-* Pinterest Pin It Button
+* Display / Show Pinterest Follow Me Button
+* Display / Show Pinterest Pin It Button. Gray or Red Button Colours
+* Display / Show Pinterest Pin It Button Hover Wordpress Photos. On mouse over your photos. Gray or Red Button Colours
 * Display / Show Pinterest Board
 * Display / Show Pinterest Profile
+* Display / Show Your Top Pin
 * Display or hide Widget Title
 * Shortcode framework v2. Insert the widget inside pages and posts.
+* Full page width shortcode available to mimic your pinterest page or board inside a wordpress page or post. Well almost mimics :)
 * [Advanced Version Link](http://wordpress.techgasp.com/pinterest-master/)
 
 **ONLINE DEMO**
@@ -88,14 +91,23 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 1. Widget with All Pinterest function ON
 2. Widget with Pinterest Board
 3. Widget with Pinterest Profile
-4. Widget with Follow Me Button
-5. Widget with Follow Me Button + Pin It Button
-6. Pin It Button in Action
-7. Widget inside pages and posts. Shortcode framework implementation v2. Pinterest Board inside a post
-8. Widget inside pages and posts. Shortcode framework implementation v2. Full post width
+4. Widget with Top Pin + Pin It (red button) + Follow Me Button
+5. Widget with Pin It Button (gray button) + Follow Me Button
+6. Pin It Hover Button in Wordpress Page or Post Photos
+7. Pin It Button in Action
+8. Shortcode framework implementation v2. Pinterest Board inside a post with text
+9. Shortcode framework implementation v2. Full page width dedicated to pinterest
 
 
 == Changelog ==
+
+= 4.2 =
+* This version taps into the new Pinterest API. Exciting new options:
+* Allows board and photos sizes. By use of the shortcode you can now have a page or post with full pinterest photo display.
+* New pinterest button with gray or red color.
+* New Pint-it hover photo button. Mouse over wordpress photos.
+* New Single Top Pin display.
+* Beefed-up shortcode.
 
 = 4.1 =
 * Wordpress 3.8 Ready
