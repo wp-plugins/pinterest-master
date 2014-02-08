@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.2
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -17,25 +17,29 @@ Pinterest is a great booming social network that lets you organize and share all
 
 We made sure the p interest buttons, profile or board display integrate perfectly in any template widget. Bring new visits and users to your wordpress powered website by pin it's pages or by showing off your photos. Also check Social Master for all social networks share buttons.
 
+Both the widget and the shortcode framework are fully mobile devices responsive, a must for any professional website.
+
 **pin it for wordpress...**
 
 IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of errors and conflicts
 
 **LITE Version Contains:**
 
-* Display or hide Widget Title
-* Pinterest Follow Me Button
+* Fully Mobile Responsive
+* Display, Hide or Change any Widget Title
+* Pinterest Master Buttons Widget (Display Pinterest Follow Me Button, Display Pinterest Pin It Button (Gray or Red Button Colours), Display Pinterest Pin It Button Hover Wordpress Photos (On mouse over your photos. Gray or Red Button Colours)
 
 **ADVANCED Version Contains:**
 
-* Display / Show Pinterest Follow Me Button
-* Display / Show Pinterest Pin It Button. Gray or Red Button Colours
-* Display / Show Pinterest Pin It Button Hover Wordpress Photos. On mouse over your photos. Gray or Red Button Colours
-* Display / Show Pinterest Board
-* Display / Show Pinterest Profile
-* Display / Show Your Top Pin
-* Display or hide Widget Title
-* Shortcode framework v2. Insert the widget inside pages and posts.
+* Fully Mobile Responsive
+* Display, Hide or Change any Widget Title
+* Pinterest Master Buttons Widget (Display Pinterest Follow Me Button, Display Pinterest Pin It Button (Gray or Red Button Colours), Display Pinterest Pin It Button Hover Wordpress Photos (On mouse over your photos. Gray or Red Button Colours)
+* Pinterest Master Advanced Board Widget
+* Pinterest Master Advanced Profile Widget
+* Pinterest Master Advanced Top Pin Widget
+* Pinterest Master System Widget (Pinterest API only allows one instance to be loaded per page. Pinterest Master System Widget avoids just that and allows you to load all widgets, shortcodes and buttons into a single page.)
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+* Shortcodes allow you to professionally display pinterest inside your wordpress pages and post
 * Full page width shortcode available to mimic your pinterest page or board inside a wordpress page or post. Well almost mimics :)
 * [Advanced Version Link](http://wordpress.techgasp.com/pinterest-master/)
 
@@ -55,9 +59,9 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 == Installation ==
 
-1. Use the Wordpress Installer, Updater.
-2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Pinterest Master" to configure the settings and your template widget position.
+1. Use the Wordpress Installer, Updater
+2. Activate in the "Plugins" admin panel
+3. Visit the "Widget Page | Pinterest Master Widgets" to configure widget settings and your template widget position
 4. [Pinterest Master Documentation](http://wordpress.techgasp.com/pinterest-master-documentation/)
 
 
@@ -66,20 +70,21 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 = Issues with buttons display =
 * Please update to latest version. Up-to-date API's are available
 
-= Where are my pinterest boards? =
-* Advanced Version contains all Pinterest Buttons plus the Display Pinterest Board or Display your Pinterest Profile.
+= Where are my widgets? =
+* Advanced Version Add-ons contains all widgets
 * [Advanced Version Link](http://wordpress.techgasp.com/pinterest-master/)
 
-= Where is Shortcode? =
-* Advanced Version contains all plugin options and the Shortcode Framework v2, publish widget inside pages and posts
+= Insert Shortcode in Pages or Posts =
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [pinterest-master-un]
+* Insert the individual shortcode into any page or post. [pinterest-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/pinterest-master/)
-* Insert the code into the page or post. [pinterest-master]
 
-= What's this Shortcode Framework v2 =
-* It's a framework developed by TechGasp and built upon wordpress marvellous resources.
-* Allows users to quickly and easily display plugins or widgets inside their pages and posts.
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2.
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+= What's this Shortcode Framework v3 =
+* It's a framework developed by TechGasp and built upon wordpress marvellous resources
+* Allows users to quickly and easily display plugins or widgets inside their pages and posts
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3/)
 
 = Need More Help =
 * [Pinterest Master Documentation](http://wordpress.techgasp.com/pinterest-master-documentation)
@@ -88,18 +93,30 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 == Screenshots ==
 
-1. Widget with All Pinterest function ON
-2. Widget with Pinterest Board
-3. Widget with Pinterest Profile
-4. Widget with Top Pin + Pin It (red button) + Follow Me Button
-5. Widget with Pin It Button (gray button) + Follow Me Button
-6. Pin It Hover Button in Wordpress Page or Post Photos
+1. All Pinterest Widgets
+2. Pinterest Master Advanced Board Widget
+3. Pinterest Master Advanced Pinterest Profile Widget
+4. Pinterest Master Advanced Top Pin Widget + Pinterest Master Advanced Buttons Widget, Pin It (red button) and Follow Me Button
+5. Pinterest Master Advanced Buttons Widget with Pin It Button (gray button) + Follow Me Button
+6. Pinterest Master Advanced Buttons Widget with Pin It Hover Button in Wordpress Page or Post Photos
 7. Pin It Button in Action
-8. Shortcode framework implementation v2. Pinterest Board inside a post with text
-9. Shortcode framework implementation v2. Full page width dedicated to pinterest
+8. Shortcode framework implementation v3. Pinterest Board inside a post with text
+9. Shortcode framework implementation v3. Full page width dedicated to pinterest
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Pinterest API
+* Pinterest Master Advanced Buttons Widget
+* Pinterest Master Advanced Board Widget
+* Pinterest Master Advanced Profile Widget
+* Pinterest Master Advanced Top Pin Widget
 
 = 4.2 =
 * This version taps into the new Pinterest API. Exciting new options:
@@ -157,8 +174,11 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new TechGasp Plugin Framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release
