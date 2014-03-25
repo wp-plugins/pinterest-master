@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 4.3
+Version: 4.3.5
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -29,9 +29,9 @@ if(!class_exists('pinterest_master')) :
 ///////DEFINE ID//////
 define('PINTEREST_MASTER_ID', 'pinterest-master');
 ///////DEFINE VERSION///////
-define( 'pinterest_master_VERSION', '4.3' );
+define( 'pinterest_master_VERSION', '4.3.5' );
 global $pinterest_master_version, $pinterest_master_name;
-$pinterest_master_version = "4.3"; //for other pages
+$pinterest_master_version = "4.3.5"; //for other pages
 $pinterest_master_name = "Pinterest Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'pinterest_master_installed_version', $pinterest_master_version );
@@ -43,6 +43,10 @@ update_option( 'pinterest_master_name', $pinterest_master_name );
 }
 // HOOK ADMIN
 require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin.php');
+// HOOK ADMIN SETTINGS PAGE
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-settings-wide.php');
+// HOOK FRONT SETTINGS WIDE
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-settings-wide.php');
 // HOOK ADMIN IN & UN SHORTCODE
 require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-shortcodes.php');
 // HOOK ADMIN WIDGETS
@@ -53,6 +57,7 @@ require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-addons.php
 require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-updater.php');
 // HOOK WIDGET PINTEREST BUTTONS
 require_once( dirname( __FILE__ ) . '/includes/pinterest-master-widget-buttons.php');
+
 
 class pinterest_master{
 //REGISTER PLUGIN

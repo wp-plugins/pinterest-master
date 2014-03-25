@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 4.3.5
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -27,26 +27,33 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 * Fully Mobile Responsive
 * Display, Hide or Change any Widget Title
+
 * Pinterest Master Buttons Widget (Display Pinterest Follow Me Button, Display Pinterest Pin It Button (Gray or Red Button Colours), Display Pinterest Pin It Button Hover Wordpress Photos (On mouse over your photos. Gray or Red Button Colours)
 
 **ADVANCED Version Contains:**
 
 * Fully Mobile Responsive
 * Display, Hide or Change any Widget Title
-* Pinterest Master Buttons Widget (Display Pinterest Follow Me Button, Display Pinterest Pin It Button (Gray or Red Button Colours), Display Pinterest Pin It Button Hover Wordpress Photos (On mouse over your photos. Gray or Red Button Colours)
+* Pint-it Button Size, Large or Small
+* Pint-it Button Shape, Rectangular or Circular
+* Pin-it Button Colour, Gray, White and Red
+* Pint-it Button Hover, on mouse-over your wordpress photos
+* Pinterest Master Buttons Widget, Display Pinterest Follow Me Button, Display Pinterest Pin It Button, Display Pinterest Pin It Button Hover
 * Pinterest Master Advanced Board Widget
 * Pinterest Master Advanced Profile Widget
 * Pinterest Master Advanced Top Pin Widget
-* Pinterest Master System Widget (Pinterest API only allows one instance to be loaded per page. Pinterest Master System Widget avoids just that and allows you to load all widgets, shortcodes and buttons into a single page.)
-* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
-* Shortcodes allow you to professionally display pinterest inside your wordpress pages and post
+
+* TechGasp Shortcode Framework v3:
+* Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
+* Individual Shortcode for each page or post, individual customized shortcode per page or post
+* Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
 * Full page width shortcode available to mimic your pinterest page or board inside a wordpress page or post. Well almost mimics :)
 * [Advanced Version Link](http://wordpress.techgasp.com/pinterest-master/)
 
 **ONLINE DEMO**
 
 * Right of the page, sidebar widget
-* Inside the post, with shortcode framework v2
+* Inside the post, with shortcode framework
 * [Demo Link](http://wordpress.techgasp.com/pinterest-master/)
 
 **More High Quality Plugins?**
@@ -105,6 +112,22 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 
 == Changelog ==
+
+= 4.3.5 =
+* TechGasp Plugin Framework v3 Improvements and Upgrades
+* New Universal Shortcode Options:
+* Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page and post
+* Option to Automatically only show the shortcode in Posts, not Pages
+* Option to Automatically show the shortcode After the Title or After the Content
+* Re-designed Buttons Widget
+* New Settings Page to control system wide pinterest settings:
+* Pint-it Button Size, Large or Small
+* Pint-it Button Shape, Rectangular or Circular
+* Pin-it Button Colour, Gray, White and Red
+* Pint-it Button Hover, on mouse-over your wordpress photos
+* Removed System Widget, users had trouble understanding and using it, options moved to new plugin settings page
+* Code clean up and speed up
+* Fixed a couple of warnings
 
 = 4.3 =
 * New TechGasp Plugin Framework

@@ -31,19 +31,19 @@ class pinterest_master_admin_widgets_table extends WP_List_Table {
 		</tr>
 		<tr>
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-pinterestmaster-admin-widget-board.png', __FILE__); ?>" alt="<?php echo get_option('pinterest_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Board Widget</h3><p>Fast clean html5 code Pinterest Boards for your wordpress website. Perfect Google SEO. Advanced Pinterest Board Widget adds your favourite boards to your wordpress website in a matter of seconds. As many as you want always with fast page load times.<p>Check add-ons page.</p></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Board Widget</h3><p>Fast clean html5 code Pinterest Boards for your wordpress website. Perfect Google SEO. Advanced Pinterest Board Widget adds your favourite boards to your wordpress website in a matter of seconds. As many as you want always with fast page load times.<p>Check all the advanced options. Navigate to your wordpress widgets page and start using it.</p></td>
 		</tr>
 		<tr class="alternate">
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-pinterestmaster-admin-widget-profile.png', __FILE__); ?>" alt="<?php echo get_option('pinterest_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Profile Widget</h3><p>This is the "top of the line Advanced Pinterest Profile Widget". The easy way to add any Pinterest Profile to your wordpress website and "show off" all your pinterest stuff. Fast Clean Code and increased Google SEO.</p><p>Check add-ons page.</p></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Profile Widget</h3><p>This is the "top of the line Advanced Pinterest Profile Widget". The easy way to add any Pinterest Profile to your wordpress website and "show off" all your pinterest stuff. Fast Clean Code and increased Google SEO.</p><p>Check all the advanced options. Navigate to your wordpress widgets page and start using it.</p></td>
 		</tr>
 		<tr>
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-pinterestmaster-admin-widget-top-pin.png', __FILE__); ?>" alt="<?php echo get_option('amazon_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Top Pin Widget</h3><p>Ever wanted to show and boost a single pin, Pinterest Master Advanced Pinterest Top Pins adds any pin to your wordpress website. Gorgeous pin display.</p><p>Check add-ons page.</p></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced Top Pin Widget</h3><p>Ever wanted to show and boost a single pin, Pinterest Master Advanced Pinterest Top Pins adds any pin to your wordpress website. Gorgeous pin display.</p><p>Check all the advanced options. Navigate to your wordpress widgets page and start using it.</p></td>
 		</tr>
 		<tr class="alternate">
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-pinterestmaster-admin-widget-system.png', __FILE__); ?>" alt="<?php echo get_option('amazon_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced System Widget</h3><p>Pinterest API only allows one instance to be loaded per page. Pinterest Master System Widget avoids just that and allows you to load all widgets, shortcodes and buttons into a single page.</p><p>Check add-ons page.</p></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Pinterest Advanced System Widget</h3><p>Pinterest API only allows one instance to be loaded per page. Pinterest Master System Widget avoids just that and allows you to load all widgets, shortcodes and buttons into a single page.</p><p>Navigate to your wordpress widgets page and start using it.</p></td>
 		</tr>
 		<tr>
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-admin-widget-blank.png', __FILE__); ?>" alt="<?php echo get_option('amazon_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>

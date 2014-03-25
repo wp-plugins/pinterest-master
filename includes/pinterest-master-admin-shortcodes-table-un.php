@@ -42,7 +42,7 @@ class pinterest_master_admin_shortcodes_table_un extends WP_List_Table {
 		</tr>
 	</tbody>
 </table>
-<p class="submit"><input class='button-primary' type='submit' name='update' value='<?php _e("Save Shortcode UN", 'pinterest_master'); ?>' id='submitbutton' /></p>
+
 </fieldset>
 </form>
 <?php

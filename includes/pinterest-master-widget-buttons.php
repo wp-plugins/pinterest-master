@@ -22,9 +22,6 @@ class pinterest_master_widget_buttons extends WP_Widget {
 		$show_pinterestfollow = isset( $instance['show_pinterestfollow'] ) ? $instance['show_pinterestfollow'] :false;
 		$pinterestusername = $instance['pinterestusername'];
 		$show_pinterestpin = isset( $instance['show_pinterestpin'] ) ? $instance['show_pinterestpin'] :false;
-		$show_pinterestpin_hover = isset( $instance['show_pinterestpin_hover'] ) ? $instance['show_pinterestpin_hover'] :false;
-		$pin_it_size = isset( $instance['pinn_it_size'] ) ? $instance['pin_it_size'] :false;
-		$pin_it_shape = isset( $instance['pin_it_shape'] ) ? $instance['pin_it_shape'] :false;
 		echo $before_widget;
 		
 		// Display the widget title
@@ -45,14 +42,13 @@ class pinterest_master_widget_buttons extends WP_Widget {
 	}
 	//Display Pinterest Pin It Button
 	if ( $show_pinterestpin ){
-	$show_pinterestpin_create = '<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>';
+	$show_pinterestpin_create = '<a href="//www.pinterest.com/pin/create/button/" '.get_option('pinterest_master_system_wide_shape').' data-pin-do="buttonBookmark"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_'.get_option('pinterest_master_system_wide_shape_b').''.get_option('pinterest_master_system_wide_color_b').''.get_option('pinterest_master_system_wide_size_b').'" /></a>';
 	}
 	else{
 	$show_pinterestpin_create = false;
 	}
 
 	echo '<div style="display:flex;">' . $show_pinterestpin_create . '&nbsp;&nbsp;' . $show_pinterestfollow_create . '</div>' .
-		'<script type="text/javascript" async data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>'  .
 		$after_widget;
 	}
 	//Update the widget
@@ -64,14 +60,11 @@ class pinterest_master_widget_buttons extends WP_Widget {
 		$instance['show_pinterestfollow'] = $new_instance['show_pinterestfollow'];
 		$instance['pinterestusername'] = $new_instance['pinterestusername'];
 		$instance['show_pinterestpin'] = $new_instance['show_pinterestpin'];
-		$instance['show_pinterestpin_hover'] = $new_instance['show_pinterestpin_hover'];
-		$instance['pin_it_size'] = $new_instance['pin_it_size'];
-		$instance['pin_it_shape'] = $new_instance['pin_it_shape'];
 		return $instance;
 	}
 	function form( $instance ) {
 	//Set up some default widget settings.
-	$defaults = array( 'pinterest_title_new' => __('Pinterest Master', 'pinterest_master'), 'pinterest_title' => true, 'pinterest_title_new' => false, 'show_pinterestfollow' => false, 'pinterestusername' => false, 'show_pinterestpin' => false, 'show_pinterestpin_hover' => false, 'pin_it_size' => false, 'pin_it_shape' => false, 'pin_it_color' => false );
+	$defaults = array( 'pinterest_title_new' => __('Pinterest Master', 'pinterest_master'), 'pinterest_title' => true, 'pinterest_title_new' => false, 'show_pinterestfollow' => false, 'pinterestusername' => false, 'show_pinterestpin' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
 		<br>
@@ -106,13 +99,8 @@ class pinterest_master_widget_buttons extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'show_pinterestpin' ); ?>"><b><?php _e('Display Pin It Button', 'pinterest_master'); ?></b></label></br>
 	</p>
 	<p>
-	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
-	&nbsp;
-	<input type="checkbox" <?php checked( (bool) $instance['show_pinterestpin_hover'], true ); ?> id="<?php echo $this->get_field_id( 'show_pinterestpin_hover' ); ?>" name="<?php echo $this->get_field_name( 'show_pinterestpin_hover' ); ?>" />
-	<label for="<?php echo $this->get_field_id( 'show_pinterestpin_hover' ); ?>"><b><?php _e('Display Pin It Hover Photos', 'pinterest_master'); ?></b></label></br>
+	<div class="description">Remember to visit the Pinterest Master Settings page to set pin-it button size, shape, colour and automatic hover.</div>
 	</p>
-	<div class="description">Activate to show Pin-it Button Hover your Photos</div>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
