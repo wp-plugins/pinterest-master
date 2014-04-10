@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 4.3.5
+Version: 4.3.6
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -29,9 +29,9 @@ if(!class_exists('pinterest_master')) :
 ///////DEFINE ID//////
 define('PINTEREST_MASTER_ID', 'pinterest-master');
 ///////DEFINE VERSION///////
-define( 'pinterest_master_VERSION', '4.3.5' );
+define( 'pinterest_master_VERSION', '4.3.6' );
 global $pinterest_master_version, $pinterest_master_name;
-$pinterest_master_version = "4.3.5"; //for other pages
+$pinterest_master_version = "4.3.6"; //for other pages
 $pinterest_master_name = "Pinterest Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'pinterest_master_installed_version', $pinterest_master_version );
