@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: 4.3.6
 License: GPLv2 or later
 
