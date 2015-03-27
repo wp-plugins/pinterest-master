@@ -27,9 +27,17 @@ class pinterest_master_widget_buttons extends WP_Widget {
 		// Display the widget title
 	if ( $pinterest_title ){
 		if (empty ($pinterest_title_new)){
-		$pinterest_title_new = get_option('pinterest_master_name');
-		}
+			if(is_multisite()){
+			$pinterest_title_new = get_site_option('pinterest_master_name');
+			}
+			else{
+			$pinterest_title_new = get_option('pinterest_master_name');
+			}
 		echo $before_title . $pinterest_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $pinterest_title_new . $after_title;
+		}
 	}
 	else{
 	}

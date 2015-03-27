@@ -148,7 +148,7 @@ update_option('pinterest_master_system_wide_color_b', "white_");
 			<td class="column-columnname">
 <select id="pinterest_master_system_wide_color" name="pinterest_master_system_wide_color" style="width:165px">
 <option>Select Pint-it Colour</option>
-<option value="<?php echo get_option('pinterest_master_system_wide_color_gray'); ?>" <?php echo get_option('pinterest_master_system_wide_color') == 'pinterest_master_system_wide_color_gray' ? 'selected="selected"':''; ?>>Gray</option>
+<!-- <option value="<?php echo get_option('pinterest_master_system_wide_color_gray'); ?>" <?php echo get_option('pinterest_master_system_wide_color') == 'pinterest_master_system_wide_color_gray' ? 'selected="selected"':''; ?>>Gray</option> -->
 <option value="<?php echo get_option('pinterest_master_system_wide_color_red'); ?>" <?php echo get_option('pinterest_master_system_wide_color') == 'pinterest_master_system_wide_color_red' ? 'selected="selected"':''; ?>>Red</option>
 <option value="<?php echo get_option('pinterest_master_system_wide_color_white'); ?>" <?php echo get_option('pinterest_master_system_wide_color') == 'pinterest_master_system_wide_color_white' ? 'selected="selected"':''; ?>>White</option>
 </select>

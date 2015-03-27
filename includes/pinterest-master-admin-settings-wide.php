@@ -1,16 +1,7 @@
 <?php
-if( is_multisite() ) {
-	function menu_multi_pinterest_admin_settings_wide(){
-	// Create menu
-	add_submenu_page( 'pinterest-master', 'Settings', 'Settings', 'manage_options', 'pinterest-master-admin-settings-wide', 'pinterest_master_admin_settings_wide' );
-	}
-}
-else {
-	// Create menu
 	function menu_single_pinterest_admin_settings_wide(){
 		if ( is_admin() )
 		add_submenu_page( 'pinterest-master', 'Settings', 'Settings', 'manage_options', 'pinterest-master-admin-settings-wide', 'pinterest_master_admin_settings_wide' );
-	}
 }
 
 function pinterest_master_admin_settings_wide(){
@@ -56,11 +47,9 @@ $wp_list_table->display();
 </p>
 <?php
 }
-
 if( is_multisite() ) {
-add_action( 'network_admin_menu', 'menu_multi_pinterest_admin_settings_wide' );
+add_action( 'admin_menu', 'menu_single_pinterest_admin_settings_wide' );
 }
 else {
 add_action( 'admin_menu', 'menu_single_pinterest_admin_settings_wide' );
 }
-?>

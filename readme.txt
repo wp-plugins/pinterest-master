@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.6
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -33,6 +33,7 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 **ADVANCED Version Contains:**
 
 * Fully Mobile Responsive
+* Pinterest Business Ready
 * Display, Hide or Change any Widget Title
 * Pint-it Button Size, Large or Small
 * Pint-it Button Shape, Rectangular or Circular
@@ -42,6 +43,7 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 * Pinterest Master Advanced Board Widget
 * Pinterest Master Advanced Profile Widget
 * Pinterest Master Advanced Top Pin Widget
+* Pinterest Dashboard Widget
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -113,6 +115,30 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 == Changelog ==
 
+= 4.4.1.4 =
+* Getting all widget titles network ready
+
+= 4.4.1.3 =
+* Tweaking the Updater
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+* Adding Pinterest Business
+* Adding Pinterest Dashboard Widget
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
+* Pin-it Button Fly-out tweaked
+
 = 4.3.6 =
 * Added automatic deletion of site_transients
 
@@ -147,7 +173,7 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 = 4.2 =
 * This version taps into the new Pinterest API. Exciting new options:
 * Allows board and photos sizes. By use of the shortcode you can now have a page or post with full pinterest photo display.
-* New pinterest button with gray or red color.
+* New pinterest button with gray or red colour.
 * New Pint-it hover photo button. Mouse over wordpress photos.
 * New Single Top Pin display.
 * Beefed-up shortcode.
