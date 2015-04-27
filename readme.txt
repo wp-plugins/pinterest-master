@@ -1,9 +1,9 @@
 === Pinterest Master ===
-Contributors: Techgasp
+Contributors: TechGasp
 Tags: wordpress, pinterest, pin-it, pin it, pin, techgasp, photo, picture, gallery, board, pinterest board, free
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 4.4.1.4
+Tested up to: 4.2
+Stable tag: 4.4.1.5
 License: GPLv2 or later
 
 Pinterest Master adds the follow me on pinterest, pin it button, show pinterest profile and show pinterest board to your wordpress website.
@@ -114,6 +114,10 @@ IMPORTANT: Makes no use of Javascipt or Ajax to keep your website clean of error
 
 
 == Changelog ==
+
+= 4.4.1.5 =
+* Wordpress 4.2 ready
+* Fixing Warning
 
 = 4.4.1.4 =
 * Getting all widget titles network ready
