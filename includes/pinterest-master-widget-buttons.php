@@ -78,7 +78,7 @@ class pinterest_master_widget_buttons extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['pinterest_title'], true ); ?> id="<?php echo $this->get_field_id( 'pinterest_title' ); ?>" name="<?php echo $this->get_field_name( 'pinterest_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'pinterest_title' ); ?>"><b><?php _e('Display Widget Title', 'pinterest_master'); ?></b></label></br>
@@ -88,9 +88,9 @@ class pinterest_master_widget_buttons extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'pinterest_title_new' ); ?>" name="<?php echo $this->get_field_name( 'pinterest_title_new' ); ?>" value="<?php echo $instance['pinterest_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_pinterestfollow'], true ); ?> id="<?php echo $this->get_field_id( 'show_pinterestfollow' ); ?>" name="<?php echo $this->get_field_name( 'show_pinterestfollow' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_pinterestfollow' ); ?>"><b><?php _e('Display Follow Me Button', 'pinterest_master'); ?></b></label></br>
@@ -99,9 +99,9 @@ class pinterest_master_widget_buttons extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'pinterestusername' ); ?>"><?php _e('Pinterest Username:', 'pinterest_master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'pinterestusername' ); ?>" name="<?php echo $this->get_field_name( 'pinterestusername' ); ?>" value="<?php echo $instance['pinterestusername']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_pinterestpin'], true ); ?> id="<?php echo $this->get_field_id( 'show_pinterestpin' ); ?>" name="<?php echo $this->get_field_name( 'show_pinterestpin' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_pinterestpin' ); ?>"><b><?php _e('Display Pin It Button', 'pinterest_master'); ?></b></label></br>
@@ -110,7 +110,7 @@ class pinterest_master_widget_buttons extends WP_Widget {
 	<div class="description">Remember to visit the Pinterest Master Settings page to set pin-it button size, shape, colour and automatic hover.</div>
 	</p>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b>Pinterest Master Website</b>
 	</p>

@@ -2,7 +2,7 @@
 /**
 Plugin Name: Pinterest Master
 Plugin URI: http://wordpress.techgasp.com/pinterest-master/
-Version: 4.4.1.5
+Version: 4.4.2.0
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: pinterest-master
@@ -26,17 +26,12 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('pinterest_master')) :
-///////DEFINE DIR///////
-define( 'PINTEREST_MASTER_DIR', plugin_dir_path( __FILE__ ) );
-///////DEFINE URL///////
-define( 'PINTEREST_MASTER_URL', plugin_dir_url( __FILE__ ) );
-///////DEFINE ID//////
-define( 'PINTEREST_MASTER_ID', 'pinterest-master');
 ///////DEFINE VERSION///////
-define( 'PINTEREST_MASTER_VERSION', '4.4.1.5' );
+define( 'PINTEREST_MASTER_VERSION', '4.4.2.0' );
+
 global $pinterest_master_version, $pinterest_master_name;
-$pinterest_master_version = "4.4.1.5"; //for other pages
-$pinterest_master_name = "Pinterest Master"; //pretty name
+$pinterest_master_version = "4.4.2.0"; //for other pages
+$pinterest_master_name = "Google Ads Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'pinterest_master_installed_version', $pinterest_master_version );
 update_site_option( 'pinterest_master_name', $pinterest_master_name );
@@ -45,28 +40,8 @@ else{
 update_option( 'pinterest_master_installed_version', $pinterest_master_version );
 update_option( 'pinterest_master_name', $pinterest_master_name );
 }
-// HOOK ADMIN
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin.php');
-// HOOK ADMIN SETTINGS PAGE » ONLY ADVANCED
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-settings-wide.php');
-// HOOK FRONT SETTINGS WIDE » ONLY ADVANCED
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-settings-wide.php');
-// HOOK ADMIN IN & UN SHORTCODE
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-shortcodes.php');
-// HOOK ADMIN WIDGETS
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-widgets.php');
-// HOOK ADMIN ADDONS
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-addons.php');
-// HOOK ADMIN UPDATER
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-updater.php');
-// HOOK WIDGET PINTEREST BUTTONS
-require_once( dirname( __FILE__ ) . '/includes/pinterest-master-widget-buttons.php');
 
 class pinterest_master{
-//REGISTER PLUGIN
-public static function pinterest_master_register(){
-register_activation_hook( __FILE__, array( __CLASS__, 'pinterest_master_activate' ) );
-}
 public static function content_with_quote($content){
 $quote = '<p>' . get_option('tsm_quote') . '</p>';
 	return $content . $quote;
@@ -85,43 +60,21 @@ if ( $file == plugin_basename( dirname(__FILE__).'/pinterest-master.php' ) ) {
 	return $links;
 }
 
-public static function pinterest_master_updater_version_check(){
-global $pinterest_master_version;
-//CHECK NEW VERSION
-$pinterest_master_slug = basename(dirname(__FILE__));
-$current = get_site_transient( 'update_plugins' );
-$pinterest_plugin_slug = $pinterest_master_slug.'/'.$pinterest_master_slug.'.php';
-@$r = $current->response[ $pinterest_plugin_slug ];
-if (empty($r)){
-$r = false;
-$pinterest_plugin_slug = false;
-if( is_multisite() ) {
-update_site_option( 'pinterest_master_newest_version', $pinterest_master_version );
-}
-else{
-update_option( 'pinterest_master_newest_version', $pinterest_master_version );
-}
-}
-if (!empty($r)){
-$pinterest_plugin_slug = $pinterest_master_slug.'/'.$pinterest_master_slug.'.php';
-@$r = $current->response[ $pinterest_plugin_slug ];
-if( is_multisite() ) {
-update_site_option( 'pinterest_master_newest_version', $r->new_version );
-}
-else{
-update_option( 'pinterest_master_newest_version', $r->new_version );
-}
-}
-}
-//Remove WP Updater
-// Advanced Updater
-//Updater Label Message
 //END CLASS
-}
-if ( is_admin() ){
-	add_action('admin_init', array('pinterest_master', 'pinterest_master_register'));
-	add_action('init', array('pinterest_master', 'pinterest_master_updater_version_check'));
 }
 add_filter('the_content', array('pinterest_master', 'content_with_quote'));
 add_filter( 'plugin_action_links', array('pinterest_master', 'pinterest_master_links'), 10, 2 );
 endif;
+
+// HOOK ADMIN
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin.php');
+// HOOK ADMIN SETTINGS PAGE
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-settings-wide.php');
+// HOOK FRONT SETTINGS WIDE
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-settings-wide.php');
+// HOOK ADMIN ADDONS
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-addons.php');
+// HOOK ADMIN WIDGETS
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-admin-widgets.php');
+// HOOK WIDGET PINTEREST BUTTONS
+require_once( dirname( __FILE__ ) . '/includes/pinterest-master-widget-buttons.php');
